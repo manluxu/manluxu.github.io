@@ -75,3 +75,8 @@ body {
   font-family: Georgia;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
 }
+#### Takeaway from quiz:
+- selecter **id** more specific than **class** and **tags**
+
+
+
