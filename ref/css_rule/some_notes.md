@@ -9,12 +9,18 @@ img {
   height: 150px;
 }
 </code></pre>
-#### 3. Assian element <p> with a class, then changing font-things in .css:
+#### 3. Assiagn element <p> with a class, then changing font-things in .css:
     <p class="description"></p>
 <pre><code>
     .description {
     font-size: 20px;
     }
 </code></pre>
-
+#### 4. assiagn element <p>with a id, then changing font-things in .css:
+  <p id="cook-time"></p>
+<pre><code>
+    #element-id {
+    font-weight: bold;
+    }
+</code></pre>  
 
