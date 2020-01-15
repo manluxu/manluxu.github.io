@@ -16,11 +16,24 @@ img {
     font-size: 20px;
     }
 </code></pre>
-#### 4. assiagn element \<p>with a id, then changing font-things in .css:
+#### 4. Assiagn element \<p>with a id, then changing font-things in .css:
    \<p id="cook-time"></p>
 <pre><code>
     #element-id {
     font-weight: bold;
     }
 </code></pre>  
+#### 5. in .css edit things like \<li>:
+To select elements within a parent element, use a space between the selectors. Be sure to put the outside parent element before the child element:
 
+<pre><code>
+parent-element child-element {
+
+}
+</code></pre>
+For example:
+<pre><code>
+ul li {
+  list-style: square
+}
+</code></pre>
