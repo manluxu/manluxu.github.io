@@ -17,7 +17,7 @@ img {
     }
 </code></pre>
 #### 4. assiagn element \<p>with a id, then changing font-things in .css:
-   <p id="cook-time"></p>
+   \<p id="cook-time"></p>
 <pre><code>
     #element-id {
     font-weight: bold;
