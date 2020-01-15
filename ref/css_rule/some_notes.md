@@ -10,9 +10,8 @@ img {
 }
 </code></pre>
 #### 3. Assian element <p> with a class, then changing font-things in .css:
-<pre><code>
     <p class="description"></p>
-    
+<pre><code>
     .description {
     font-size: 20px;
     }
