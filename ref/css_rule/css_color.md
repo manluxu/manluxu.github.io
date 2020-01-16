@@ -12,3 +12,25 @@ Saturation refers to the intensity or purity of the color. If you imagine a line
 Lightness refers to how light or dark the color is. Halfway, or 50%, is normal lightness. Imagine a sliding dimmer on a light switch that starts halfway. Sliding the dimmer up towards 100% makes the color lighter, closer to white. Sliding the dimmer down towards 0% makes the color darker, closer to black.
 
 HSL is convenient for adjusting colors. In RGB, making the color a little darker may affect all three color components. In HSL, that’s as easy as changing the lightness value. HSL is also useful for making a set of colors that work well together by selecting various colors that have the same lightness and saturation but different hues.
+
+#### Opacity and Alpha
+All of the colors we’ve seen so far have been opaque, or non-transparent. When we overlap two opaque elements, nothing from the bottom element shows through the top element. In this exercise, we’ll change the opacity, or the amount of transparency, of some colors so that some or all of the bottom elements are visible through a covering element.
+
+To use opacity in the HSL color scheme, use hsla instead of hsl, and four values instead of three. 
+#### RGBA
+The RGB color scheme has a similar syntax for opacity, rgba. Again, the first three values work the same as rgb and the last value is the alpha. 
+
+little beauty:
+<pre><code>
+body {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.midground {
+  background-color: hsla(225, 100%, 25%, 0.4);
+}
+
+.foreground {
+  background-color: hsla(325, 50%, 50%, 0.6);
+}
+</code></pre>
