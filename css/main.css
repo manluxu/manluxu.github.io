@@ -5,7 +5,7 @@ body {
 
 /** Header styles **/
 .header {
-  background-image: url(https://i.imgur.com/lu12h6b.jpg?1);
+  background-image: url("https://i.imgur.com/lu12h6b.jpg?1");
   height: 270px;
   background-position: center center;
 }
