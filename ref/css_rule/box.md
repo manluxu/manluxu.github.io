@@ -239,6 +239,22 @@ Let’s review what you learned:
 - The value for the new box model is border-box.
 - The border-box model is not affected by border thickness or padding.
 
+### Devtool tips:
+In chrome, can edit css html... selcting editting, remember to save.
+
+Heightlight (red boxes) the content: in the html, plus
+<pre><code>
+* {
+  border: 1px solid red !important;
+}
+</code></pre>
+
+used for easy inspect in Devtools.
+
+The width of a children of a parent can be define as \% when (box-sizing: content-box; calculate the content only) (box-sizing: border-box; calculated content + padding + border)
+
+
+
 
 
 
