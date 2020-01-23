@@ -108,3 +108,14 @@ For example, <div>s in the CSS below will be displayed on the same line and with
 In the example above, there are three rectangular divs that each contain a paragraph of text. The .rectangle <div>s will all appear inline (provided there is enough space from left to right) with a width of 200 pixels and height of 300 pixels, even though the text inside of them may not require 200 pixels by 300 pixels of space.
 
 
+#### Float
+So far, you’ve learned how to specify the exact position of an element using offset properties. If you’re simply interested in moving an element as far left or as far right as possible on the page, you can use the float property.
+
+The float property can be set to one of two values:
+
+- left - this value will move, or float, elements as far left as possible.
+- right - this value will move elements as far right as possible.
+
+Floated elements must have a width specified, as in the example above. Otherwise, the element will assume the full width of its containing element, and changing the float value will not yield any visible results.
+
+#### Clear
