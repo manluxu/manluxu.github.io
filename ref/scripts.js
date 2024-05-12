@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pokemon = document.createElement('img');
     pokemon.src = 'ref/duck.jpeg'; // Path to a Pokémon image
     pokemon.style.position = 'absolute';
-    pokemon.style.width = '80px'; // Set image size
+    pokemon.style.width = '100px'; // Set image size
     pokemon.style.cursor = 'pointer';
     pokemon.setAttribute('title', 'Catch me!');
 

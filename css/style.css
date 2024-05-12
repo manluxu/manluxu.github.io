@@ -1,14 +1,30 @@
+html {
+    height: 100%;  /* Ensures the html element covers the full viewport height */
+    display: flex; /* Establishes a Flexbox context for its children */
+    flex-direction: column; /* Aligns children (like body) in a vertical stack */
+}
+
 body {
-    height: 100%;
-    margin: 0; 
-    display: flex;
+    flex: 1;
+    margin: 0;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
-    background-image: url("https://i.imgur.com/YH2kpZp.jpg");
+    background-image: url("https://i.imgur.com/qiZ9NK3.jpg");
     background-size: cover;
     color: white;
     text-align: center;
 }
+
+
+.special-color {
+    color: #9ACD32; /* Only affects elements with class 'special-color' */
+}
+
+#unique-paragraph {
+    color: purple; /* Only affects the element with ID 'unique-paragraph' */
+}
+
+
 
 header {
     background: rgba(0, 0, 0, 0.8);
