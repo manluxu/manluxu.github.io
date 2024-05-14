@@ -1,7 +1,7 @@
 html {
-    height: 100%;  /* Ensures the html element covers the full viewport height */
-    display: flex; /* Establishes a Flexbox context for its children */
-    flex-direction: column; /* Aligns children (like body) in a vertical stack */
+    height: 100%;  
+    display: flex; 
+    flex-direction: column; 
 }
 
 body {
@@ -18,11 +18,11 @@ body {
 
 
 .special-color {
-    color: #9ACD32; /* Only affects elements with class 'special-color' */
+    color: #9ACD32; /
 }
 
 #unique-paragraph {
-    color: purple; /* Only affects the element with ID 'unique-paragraph' */
+    color: purple; 
 }
 
 
@@ -34,20 +34,20 @@ header {
 
 footer {
     padding: 20px 0;
-    background-color: #333; /* Dark background for the footer */
-    color: #fff; /* Light text color for contrast */
-    text-align: center; /* Center-align text */
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
     padding: 10px 20px;
 }
 
 main {
     flex: 1;
     position: relative;
-    height: 400px;  /*Ensure there's enough space for the game*/
+    height: 400px;  
     padding: 20px;
     margin-top: 50px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility*/
-    overflow: hidden; /*Keep everything contained*/
+    background-color: rgba(255, 255, 255, 0.8); 
+    overflow: hidden; 
 }
 
 
