@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url("https://i.imgur.com/nM7P4uj.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #2b2b2b;
+}
+
+header, footer {
+    background-color: #ffcb05; /* Pokémon yellow */
+    color: #2b2b2b;
+    padding: 20px 10px;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.version-option {
+    margin: 10px;
+    text-align: center;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.trust-line {
+    font-size: 14px;
+    color: #084298;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: 20px 0;
+    background-color: #f0f8ff;
+    display: block; /* Full width */
+    text-align: left;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ff0000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Ensures buttons fill the container */
+    margin-top: 10px;
+}
+
+button img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+.security-warning {
+    background-color: #ffeedd; /* Light warning color */
+    border-left: 5px solid #ffecb3; /* Vivid warning border */
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px; /* Slightly smaller text for a concise appearance */
+}
+
+.security-warning h2 {
+    color: #856404; /* Soft brown for warning titles */
+}
+
+.security-warning p {
+    color: #6c757d; /* Soft grey for less aggressive tone */    margin-bottom: 10px;
+}
+
+.caution {
+    font-weight: bold;
+    color: #cc0000;
+}
