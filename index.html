@@ -1,42 +1,149 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Manlu Xu</title>
-		<link rel="icon" href="https://i.imgur.com/SJPKiCh.jpg">
-		<!-- link to colorful fontstyle -->
-		<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Raleway:100,500,600,800" rel="stylesheet">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/index.html">Home</a></li>
-	        	<li><a href="/about.html">Projects</a></li>
-        		<li><a href="/cv.html">CV</a></li>
-        		<li><a href="/blog.html">Blog</a></li>
-				<li><a href="/poke.html">Demo</a></li>
-    		</ul>
-		</nav>
-
-		<div class="header">
-    	<!--<h1>The Best Honey in Region</h1>-->
-		<h1>Sunny Sunday</h1>
-  	</div>
-
-		<div class="container">
-
-			<!-- <img src="https://i.imgur.com/lu12h6b.jpg" title="source: imgur.com" /> -->
-    		<div class="blurb">
-        		<!-- <h2>Hi there, I'm Manlu!</h2> -->
-				<!-- <p>I'm Manlu known as <em>Shanlin's bestie</em>. <a href="/about">Read more about my student projects...</a></p> -->
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:xumanluu@gmail.com">email</a></li>
-        		<!-- <li><a href="https://siwensun.github.io/">siwensun</a></li> -->
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi from manlu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Manlu Xu</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <img src="https://i.imgur.com/SJPKiCh.jpg" alt="Manlu Xu" class="profile-img">
+            <h1>Hello, I'm Manlu</h1>
+            <p>CS | Reader | Fun</p>
+            <p>Welcome to my personal website where I showcase my work and share my knowledge.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I am a passionate web developer with expertise in creating responsive and user-friendly websites. With a strong background in front-end and back-end technologies, I strive to build innovative digital solutions.</p>
+                    <p>My journey in web development began several years ago, and since then, I've been continuously learning and improving my skills to keep up with the latest trends and technologies in the industry.</p>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML & CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Projects -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="featured-items">
+                <div class="featured-item">
+                    <img src="https://i.imgur.com/CK5Saqm.jpg" alt="Project 1" class="featured-img">
+                    <div class="featured-content">
+                        <h3>Project One</h3>
+                        <p>A responsive web application built using React and Node.js.</p>
+                        <a href="projects.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://i.imgur.com/iGVtKtu.jpg" alt="Project 2" class="fe`atured-img">
+                    <div class="featured-content">
+                        <h3>Project Two</h3>
+                        <p>An e-commerce platform with user authentication and payment integration.</p>
+                        <a href="projects.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="https://i.imgur.com/sZpvpfb.jpg" alt="Project 3" class="featured-img">
+                    <div class="featured-content">
+                        <h3>Project Three</h3>
+                        <p>A mobile-first website designed for optimal user experience.</p>
+                        <a href="projects.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for collaboration or any inquiries.</p>
+                    <p>Email: manlux AT UCI dot EDU</p>
+                    <p>Location: Irvine, CA</p>
+                    <div class="social-links">
+                        <a href="#" title="GitHub">GitHub</a>
+                        <a href="#" title="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Moon Cake. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
