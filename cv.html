@@ -1,53 +1,244 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Manlu Xu</title>
-		<link rel="icon" href="https://i.imgur.com/SJPKiCh.jpg">
-		<!-- link to colorful fontstyle -->
-		<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Raleway:100,500,600,800" rel="stylesheet">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/cv.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/index.html">Home</a></li>
-	        	<li><a href="/about.html">Projects</a></li>
-        		<li><a href="/cv.html">CV</a></li>
-        		<li><a href="/blog.html">Blog</a></li>
-    		</ul>
-		</nav>
-
-		<div class="header">
-    	<h1>More about me</h1>
-  	</div>
-
-		<div class="container">
-
-			<!-- <img src="https://i.imgur.com/lu12h6b.jpg" title="source: imgur.com" /> -->
-			
-		<ul class="bloglist">
-
-				
-		<li class="blogitem">
-          		<!-- <a href="ref/CV_2019.pdf" target="_blank"> -->
-            		<span class="blogtitle">->My CV</span>
-          		</a>
-        	</li>
-
-
-      </ul>
-		
-		</div><!-- /.container -->
-		
-	
-		
-		<footer>
-
-    		<ul>
-        		<li><a href="mailto:xumanluu@gmail.com">email</a></li>
-        		<!-- <li><a href="https://siwensun.github.io/">siwensun</a></li> -->
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manlu - CV</title>
+    <link rel="icon" href="https://i.imgur.com/5JWvcSY.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Manlu Xu</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="cv.html" class="active">CV</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="poke.html" target="_blank">Demo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- CV Header -->
+    <section class="cv-header">
+        <div class="container">
+            <div class="cv-intro">
+                <h1>Curriculum Vitae</h1>
+                <p>A summary of my professional experience, skills, and education</p>
+                <a href="assets/resume.pdf" class="btn" download><i class="fas fa-download"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CV Content -->
+    <section class="cv-content">
+        <div class="container">
+            <div class="cv-grid">
+                <!-- Left Column - Experience & Education -->
+                <div class="cv-main">
+                    <!-- Professional Experience -->
+                    <div class="cv-section">
+                        <h2 class="section-title">Professional Experience</h2>
+                        
+                        <div class="timeline">
+                            <!-- LEGO -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Aug 2022 - Aug 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Cloud Engineer</h3>
+                                    <p class="organization">the LEGO Group, Billund, Denmark</p>
+                                    <ul class="responsibilities">
+                                        <li>Implemented cloud-based platform for IoT data streaming on AWS/Azure for sustainability analytics</li>
+                                        <li>Built automated pipelines using Apache Pulsar and Databricks for energy, water and waste data</li>
+                                        <li>Managed cloud resources as code, improving deployment consistency</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Novozymes -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Oct 2019 - Aug 2022</div>
+                                <div class="timeline-content">
+                                    <h3>Cloud Engineer</h3>
+                                    <p class="organization">Novozymes A/S, Kongens Lyngby, Denmark</p>
+                                    <ul class="responsibilities">
+                                        <li>Implemented AWS cloud data platform connecting pilot plant to data lake for analysis</li>
+                                        <li>Built self-service platform for Kubernetes (AWS EKS) deployments, reducing time from days to hours</li>
+                                        <li>Created DataDog monitoring solutions and led CI/CD implementation for production services</li>
+                                        <li>Managed AWS infrastructure using modular Terraform code for consistent provisioning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Technical University -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Oct 2018 - Sep 2019</div>
+                                <div class="timeline-content">
+                                    <h3>Research Assistant</h3>
+                                    <p class="organization">Technical University of Denmark, Kongens Lyngby, Denmark</p>
+                                    <ul class="responsibilities">
+                                        <li>Deployed Jetson Nano prototype on Azure for vehicle detection using deep learning</li>
+                                        <li>Developed IoT solutions for smart campus with Azure IoT hub integration</li>
+                                        <li>Built backend services for data collection and mentored students on computer vision projects</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="cv-section">
+                        <h2 class="section-title">Education</h2>
+                        
+                        <div class="timeline">
+                            <!-- UCI -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Sep 2023 - June 2025 (Expected)</div>
+                                <div class="timeline-content">
+                                    <h3>M.Sc. in Computer Science</h3>
+                                    <p class="organization">University of California, Irvine (UCI), CA, United States</p>
+                                    <p>GPA: 3.96/4.0</p>
+                                    <p>Relevant courses: Machine Learning, Deep Generative Models, Analysis of Programming Languages, Computer and Systems Security, Usable Security and Privacy</p>
+                                </div>
+                            </div>
+                            
+                            <!-- DTU -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Sep 2016 - Sep 2019</div>
+                                <div class="timeline-content">
+                                    <h3>M.Sc. in Telecommunication</h3>
+                                    <p class="organization">Technical University of Denmark (DTU), Kongens Lyngby, Denmark</p>
+                                    <p>Relevant courses: Deep Learning, Networking Technologies and Application Development for Internet of Things (IoT), Project Management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Skills & Other Info -->
+                <div class="cv-sidebar">
+                    <!-- Skills Section -->
+                    <div class="cv-section sidebar-section">
+                        <h2 class="section-title">Technical Skills</h2>
+                        
+                        <div class="skills-list">
+                            <div class="skill-category">
+                                <h3>Frontend</h3>
+                                <div class="skill-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                    <span>TypeScript</span>
+                             
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3>Backend</h3>
+                                <div class="skill-tags">
+                                    <span>Node.js</span>
+                                
+                                    <span>Python</span>
+                                   
+                                    <span>RESTful APIs</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3>Database</h3>
+                                <div class="skill-tags">
+                                    <span>DynamoDB</span>
+                                    <span>MySQL</span>
+                                    <span>PostgreSQL</span>
+                              
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3>Tools & Others</h3>
+                                <div class="skill-tags">
+                                    <span>Git</span>
+                                    <span>Docker</span>
+                                    <span>Kubernetes</span>
+                                    <span>AWS</span>
+                                    <span>CI/CD</span>
+                                    <span>Terraform</span>
+                                    <span>Databricks</span>
+                                    <span>PySpark</span>
+                                    <span>Agile/Scrum</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Languages -->
+                    <div class="cv-section sidebar-section">
+                        <h2 class="section-title">Languages</h2>
+                        <div class="languages">
+                            <div class="language-item">
+                                <span class="language-name">English</span>
+                                <span class="language-level">Professional</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Chinese</span>
+                                <span class="language-level">Native</span>
+                            </div>
+               
+                        </div>
+                    </div>
+                    
+                    <!-- Interests -->
+                    <div class="cv-section sidebar-section">
+                        <h2 class="section-title">Interests</h2>
+                        <div class="interests">
+                            <span><i class="fas fa-mountain"></i> Hiking</span>
+                            <span><i class="fas fa-book"></i> Reading</span>
+                            <span><i class="fas fa-hand-scissors"></i> Crochet</span>
+                            <span><i class="fas fa-paint-brush"></i> Watercolor</span>
+                            <span><i class="fas fa-swimming-pool"></i> Swimming</span>
+                            <span><i class="fas fa-seedling"></i> Plants</span>
+                        </div>
+                    </div>
+                    
+                    <!-- My Developer Mantras -->
+                    <div class="cv-section sidebar-section">
+                        <h2 class="section-title">Code Philosophy</h2>
+                        <div class="mantras">
+                            <blockquote>Turning caffeine into code since 2016.</blockquote>
+                            <blockquote> ☕ </blockquote>
+                            <blockquote> </blockquote>
+                            <blockquote> </blockquote>
+                        </div>
+                    </div>
+    </section>
+    
+    <!-- Contact CTA -->
+    <section class="cv-cta">
+        <div class="container">
+            <h2>Want to know more?</h2>
+            <p>Feel free to reach out if you'd like to discuss my experience or potential opportunities.</p>
+            <a href="index.html#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 mgyoyo. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

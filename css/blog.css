@@ -1,69 +1,206 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/* Blog Page Specific Styles */
+
+/* Blog Banner */
+.blog-banner {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 60px 0;
+    text-align: center;
 }
 
-/** Header styles **/
-.header {
-  background-image: url("https://i.imgur.com/NlX4Wsv.jpg?1");
-  height: 220px;
-  background-position: center center;
+.blog-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-/*
-img {
-  height: 180px;
+.blog-banner p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
-*/
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+/* Coming Soon Section */
+.coming-soon {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.construction-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.construction-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.construction-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.construction-content p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.topics-list {
     list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-  color: hsla(47, 48%, 58%, 0.4);
-  font-family: 'Covered By Your Grace', sans-serif;
-  font-size: 100px;
-  line-height: 76px;
-  margin: 0;
-  position: relative;
-  text-align: center;
-  top: 20%;
+    padding: 0;
+    margin: 0 auto 30px;
+    max-width: 400px;
+    text-align: left;
 }
 
-
-h2 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+.topics-list li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    color: #555;
 }
 
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+.topics-list li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--primary-color);
+}
+
+.check-back {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin: 30px 0;
+}
+
+/* Subscribe Section */
+.subscribe-option {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px dashed #ddd;
+}
+
+.subscribe-option h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.email-signup {
+    display: flex;
+    max-width: 500px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.email-signup input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.email-signup .btn {
+    padding: 12px 20px;
+}
+
+.privacy-note {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Preview Section */
+.blog-preview {
+    padding: 60px 0;
+}
+
+.blog-preview h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.preview-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-color);
+}
+
+.preview-content h3 {
     color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+.post-meta {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
 }
 
-ul.posts li {
-    list-style: none;
+.preview-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: rgba(42, 101, 146, 0.1);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .construction-content {
+        padding: 25px;
+    }
+    
+    .email-signup {
+        flex-direction: column;
+    }
+    
+    .email-signup .btn {
+        width: 100%;
+    }
+    
+    .preview-content {
+        padding: 20px;
+    }
 }

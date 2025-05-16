@@ -1,84 +1,305 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/* CV Page Specific Styles */
+
+/* CV Header */
+.cv-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 60px 0;
+    text-align: center;
 }
 
-/** Header styles **/
-.header {
-  background-image: url("https://i.imgur.com/lu12h6b.jpg?1");
-  height: 270px;
-  background-position: center center;
+.cv-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-/*
-img {
-  height: 200px;
+.cv-intro p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 25px;
 }
-*/
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
+
+.cv-intro .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* CV Content Layout */
+.cv-content {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 40px;
+}
+
+/* Main Column */
+.cv-main {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.cv-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Section Styling */
+.cv-section {
+    padding: 30px;
+}
+
+.cv-section .section-title {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: calc(100% - 16px);
+    width: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -44px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.timeline-date {
     font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-  color: hsla(48, 89%, 80%, 0.9);
-  font-family: 'Covered By Your Grace', sans-serif;
-  font-size: 100px;
-  line-height: 76px;
-  margin: 0;
-  position: relative;
-  text-align: center;
-  top: 20%;
+    color: var(--primary-color);
+    margin-bottom: 5px;
 }
 
-
-h2 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+.timeline-content h3 {
+    margin-bottom: 5px;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+.organization {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 12px;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+.responsibilities {
+    padding-left: 20px;
+    margin-top: 8px;
 }
 
-ul.posts li {
-    list-style: none;
+.responsibilities li {
+    margin-bottom: 8px;
+    color: #555;
 }
 
-.maincv {
-  width: 500%;
-  height: 800%;
-  padding: 10% 20%;
-  /*border: 2px solid DARKGRAY;*/
-  border-radius:10px;
-  /* box-shadow: 5px 5px 2px #888888; add shadow*/
-  clear: both;
-  position: absolute;
-  left: -400px;
-  top: 200px;
-  margin-top:0px;
-  background-color: rgba(250,249,247,0.4);/*rgba(164,159,143,0.1);*/
+/* Skills Styling */
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    background-color: rgba(42, 101, 146, 0.1);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Languages Styling */
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.language-item:last-child {
+    border-bottom: none;
+}
+
+.language-name {
+    font-weight: 500;
+}
+
+.language-level {
+    color: #666;
+}
+
+/* Interests Styling */
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.interests span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(42, 101, 146, 0.1);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.interests span i {
+    font-size: 0.9rem;
+}
+
+/* References */
+.references-note {
+    color: #555;
+}
+
+/* CTA Section */
+.cv-cta {
+    padding: 60px 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.cv-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.cv-cta p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #666;
+}
+
+/* Code Philosophy styling */
+.mantras {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mantras blockquote {
+    margin: 0;
+    padding: 5px 0;
+    font-style: italic;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cv-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .cv-sidebar {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .cv-header {
+        padding: 40px 0;
+    }
+    
+    .cv-section {
+        padding: 20px;
+    }
+    
+    .timeline {
+        padding-left: 30px;
+    }
+    
+    .timeline-dot {
+        left: -34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline {
+        padding-left: 25px;
+    }
+    
+    .timeline-dot {
+        left: -29px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .interests {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .interests span {
+        width: 100%;
+    }
+
+    
 }
